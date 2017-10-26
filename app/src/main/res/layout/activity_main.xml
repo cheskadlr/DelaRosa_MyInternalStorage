@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delarosa.delarosa_myinternalstorage.MainActivity">
+
+    <EditText
+        android:id="@+id/etMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Type your message here"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etMsg"
+        android:layout_alignStart="@+id/etMsg"
+        android:layout_below="@+id/etMsg"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:onClick="saveMessage"
+        android:text="Save Message" />
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSave"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_alignEnd="@+id/etMsg"
+        android:layout_alignRight="@+id/etMsg"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:onClick="displayMessage"
+        android:text="Display Message" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:lineSpacingExtra="8sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="display"
+        android:textSize="16sp" />
+</RelativeLayout>
